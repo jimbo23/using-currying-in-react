@@ -20,7 +20,7 @@ const Example1 = () => {
 
   return (
     <>
-      <h3>Strong Currying pattern for handling Event</h3>
+      <h3>Using Currying pattern for handling Event</h3>
       <div>
         <label>value 1</label>
         <input value={value1} onChange={handleInput(setValue1)} />
