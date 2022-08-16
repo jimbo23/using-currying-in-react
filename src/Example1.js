@@ -20,17 +20,15 @@ const Example1 = () => {
 
   return (
     <>
-      <h3>Using Currying pattern for handling Event</h3>
+      <strong>Example 1:</strong>
       <div>
-        <label>value 1</label>
+        <label>value 1: </label>
         <input value={value1} onChange={handleInput(setValue1)} />
       </div>
       <div>
-        <label>value 2</label>
+        <label>value 2: </label>
         <input value={value2} onChange={handleInput(setValue2)} />
       </div>
-      <p>value1: {value1}</p>
-      <p>value2: {value2}</p>
     </>
   );
 };
