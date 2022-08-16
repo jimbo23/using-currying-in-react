@@ -25,7 +25,7 @@ const Example2 = () => {
   };
 
   return (
-    <>
+    <div style={{ margin: 10 }}>
       <strong>Example2: </strong>
       <div>
         <button onClick={handleClick('https://www.google.com/')(1)}>
@@ -37,7 +37,7 @@ const Example2 = () => {
           Button that goes to youtube.com
         </button>
       </div>
-    </>
+    </div>
   );
 };
 

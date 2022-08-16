@@ -19,7 +19,7 @@ const Example1 = () => {
   const handleInput = (stateFn) => (e) => stateFn(e.target.value);
 
   return (
-    <>
+    <div style={{ margin: 10 }}>
       <strong>Example 1:</strong>
       <div>
         <label>value 1: </label>
@@ -29,7 +29,7 @@ const Example1 = () => {
         <label>value 2: </label>
         <input value={value2} onChange={handleInput(setValue2)} />
       </div>
-    </>
+    </div>
   );
 };
 
