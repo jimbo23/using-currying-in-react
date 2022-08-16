@@ -9,26 +9,33 @@ const Example2 = () => {
   /** Instead of doing this: 👇🏼❌ 
     const handleClick1 = (e) => {
       console.log('button 1 is clicked')
+      window.open('https://www.google.com/')
     } 
 
     const handleClick1 = (e) => {
       console.log('button 2 is clicked')
+      window.open('https://www.youtube.com/')
     } 
    */
 
   /** Do this: 👇🏼✅ */
-  const handleClick = (buttonId) => (e) => {
-    console.log(`${e.target.innerHTML} ${buttonId} is clicked`);
+  const handleClick = (url) => (buttonId) => (e) => {
+    console.log(`${e.target.tagName} ${buttonId} is clicked`);
+    window.open(url);
   };
 
   return (
     <>
       <strong>Example2: </strong>
       <div>
-        <button onClick={handleClick(1)}>Button</button>
+        <button onClick={handleClick('https://www.google.com/')(1)}>
+          Button that goes to google.com
+        </button>
       </div>
       <div>
-        <button onClick={handleClick(2)}>Button</button>
+        <button onClick={handleClick('https://www.youtube.com/')(2)}>
+          Button that goes to youtube.com
+        </button>
       </div>
     </>
   );
